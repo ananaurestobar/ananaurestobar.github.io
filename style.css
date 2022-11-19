@@ -1,0 +1,79 @@
+body{
+  background-color: lightsalmon;
+}
+header{
+  text-align: center;
+}
+header p{
+  color: brown;
+  width: 50%;
+  margin: 0 auto;
+}
+.list-burger{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.burger{
+  width: 400px;
+  padding: 20px;
+}
+.burger-title{
+  background: lightgreen;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;  
+  margin-bottom: 20px;
+}
+.burger-description{
+  background: lightblue;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.burger-price{
+  background: black;
+  border: 2px solid white;
+  width: min-content;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wing{
+  background-color: darkviolet;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.wing-section {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.wing-title{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: center; 
+}
+.wing-title-text{
+  color: white;  
+}
+.wing-title-price{
+  color: red;
+}
+.wing-description{
+  color: aqua;
+}
+
+img{
+  max-inline-size: 100%;
+  block-size: auto;
+}
