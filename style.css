@@ -9,29 +9,29 @@ header p{
   width: 50%;
   margin: 0 auto;
 }
-.list-burger{
+.list-food{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.burger{
+.food{
   width: 400px;
   padding: 20px;
 }
-.burger-title{
+.food-title{
   background: lightgreen;
   align-items: center;
   text-align: center;
   font-weight: bold;  
   margin-bottom: 20px;
 }
-.burger-description{
+.food-description{
   background: lightblue;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.burger-price{
+.food-price{
   background: black;
   border: 2px solid white;
   width: min-content;
