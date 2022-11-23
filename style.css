@@ -1,14 +1,22 @@
+@font-face {
+  font-family: 'ReturnToSender';
+  src: url('fonts/Return_To_Sender.ttf');
+}
+@font-face {
+  font-family: 'Ghostz';
+  src: url('fonts/Ghostz.ttf');
+}
 body{
-  background-color: lightsalmon;
+  background-image: url('images/redwood.jpg');
+  background-repeat: repeapt;
 }
 header{
   text-align: center;
+  color: white;
+  font-size: 2em;
 }
-header p{
-  color: brown;
-  width: 50%;
-  margin: 0 auto;
-}
+
+
 .list-food{
   display: flex;
   flex-direction: row;
@@ -19,14 +27,17 @@ header p{
   padding: 20px;
 }
 .food-title{
-  background: lightgreen;
+  font-family: 'Ghostz';
+  font-size: 2.5em;
+  color: white;
   align-items: center;
   text-align: center;
   font-weight: bold;  
   margin-bottom: 20px;
 }
 .food-description{
-  background: lightblue;
+  font-size: 1.5em;
+  color: white;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -42,38 +53,43 @@ header p{
   margin-right: auto;
 }
 
-.wing{
-  background-color: darkviolet;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-}
-.wing-section {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-.wing-title{
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  justify-content: center; 
-}
-.wing-title-text{
-  color: white;  
-}
-.wing-title-price{
-  color: red;
-}
-.wing-description{
-  color: aqua;
-}
 
+.wing{
+  display: flex;
+  border: 2px solid white;
+}
+.wing-section{
+  flex: 1;
+  background-color: black;
+}
+.wing-header{
+  display: flex;
+  justify-content: space-evenly;
+}
+.wing-header-tittle{
+  text-align: center;
+  color: white;
+  font-family: 'ReturnToSender';
+  font-size: 3em;
+  width: min(100% - 4rem, 200px);
+}
+.wing-header-price{
+  display: flex;
+  font-family: 'ReturnToSender';
+  justify-content: center;
+  align-items: center;  
+  font-size: 2em;
+  color: white;
+  background-color: red;
+  padding: 3px;
+	clip-path: circle(50%);
+}
+.wing-body{
+  text-align: center;
+  font-size: 1.3em;
+  padding: 3%;
+  color: white;
+}
 img{
-  max-inline-size: 100%;
-  block-size: auto;
+  max-width: 100%;  
 }
