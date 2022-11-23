@@ -20,7 +20,8 @@ header{
 .list-food{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;  
 }
 .food{
   width: 400px;
@@ -56,6 +57,7 @@ header{
 
 .wing{
   display: flex;
+  flex-direction: row;
   border: 2px solid white;
 }
 .wing-section{
@@ -92,4 +94,17 @@ header{
 }
 img{
   max-width: 100%;  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .wing{
+    display: block;
+  }
+  
+  .wing:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  } 
 }
