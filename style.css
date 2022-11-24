@@ -16,6 +16,10 @@ header{
   font-size: 2em;
 }
 
+.idioma{
+  text-align: right;
+  margin-right: 5px;
+}
 
 .list-food{
   display: flex;
