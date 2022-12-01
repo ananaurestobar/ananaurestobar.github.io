@@ -1,11 +1,30 @@
 @font-face {
+  font-family: 'Shadow7WdR';
+  src: url('fonts/Shadow-7WdR.ttf');
+}
+
+@font-face {
   font-family: 'ReturnToSender';
   src: url('fonts/Return_To_Sender.ttf');
 }
 @font-face {
-  font-family: 'Ghostz';
-  src: url('fonts/Ghostz.ttf');
+  font-family: 'Huamanpoma';
+  src: url('fonts/huamanpoma.ttf');
 }
+@font-face {
+  font-family: 'BreeSerifRegular';
+  src: url('fonts/BreeSerif-Regular.otf');
+}
+
+@font-face {
+  font-family: 'MF26Banners';
+  src: url('fonts/MF26Banners.ttf');
+}
+
+* {
+  font-family: 'BreeSerifRegular';
+}
+
 body{
   background-image: url('images/redwood.jpg');
   background-repeat: repeapt;
@@ -17,8 +36,27 @@ header{
 }
 
 .idioma{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
   text-align: right;
   margin-right: 5px;
+}
+
+.food-type-tittle{
+  font-family: 'Shadow7WdR'; 
+  font-size: 4em;  
+  color: white;
+  text-align: center;
+  border: 3px outset gray;
+  margin: 0 5%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.imagen-seccion{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .list-food{
@@ -32,7 +70,7 @@ header{
   padding: 20px;
 }
 .food-title{
-  font-family: 'Ghostz';
+  font-family: 'Huamanpoma';
   font-size: 2.5em;
   color: white;
   align-items: center;
@@ -58,7 +96,6 @@ header{
   margin-right: auto;
 }
 
-
 .wing{
   display: flex;
   flex-direction: row;
@@ -70,6 +107,7 @@ header{
 }
 .wing-header{
   display: flex;
+  margin-top: 10px;
   justify-content: space-evenly;
 }
 .wing-header-tittle{
@@ -100,7 +138,10 @@ img{
   max-width: 100%;  
 }
 
-
+/*h1{
+  font-family: 'MF26Banners';
+  font-size: 20px;
+}*/
 @media only screen and (max-width: 600px) {
   .wing{
     display: block;
